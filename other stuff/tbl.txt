@@ -1,0 +1,20 @@
+data-unterteilungen:
+...{{;;;}}->{{;;}}->{{;}}->{{:}}->{{,}}->{{.}}->{{|}}->{{||}}->{{|||}}->{{||||}}...
+
+USERS:
+
+ ID, username, password, data1, data2
+ 
+ ID       -> Automatisch generierte Zahl. Jede Zahl ist nur einmal in der Tabelle vorhanden. Wird die Zeile gelöscht, wird  die nun nicht mehr vorhandene ID wiederverwendet für einen neuen Eintrag. 
+ Bsp: 65
+ 
+ username -> Wird selbst gewählt. Jeder username kann auch nur einmal vorkomme, es sei denn, er wird gelöscht. Dient z.B.  zur Benutzung in Verbindung mit dem @ Zeichen in Gruppenkonversationen/topics.
+ Bsp: OnnoEberhard
+ 
+ password -> Wird auch selbst gewählt. Das Passwort seber steht jedoch nicht in der Tabelle sondern nur eine md5- Verschlüsselte Version der Passwortes.
+ Bsp: 81dc9bdb52d04dc20036dbd8313ed055 (->beim eigentlichen Passwort 1234)
+ 
+ data1    -> Verschiedene Informationen und Einstellungen des, bzw. zum Benutzer/s. Unterteilt in einzelne Teile, welche  mit der Kombination {{;}} außeinandergehalten werden. Diese werden auch unterteilt mit der Kombination {{:}}, wobei die  erste Unterteilung der Name der Einstellung/Information ist.
+ Bsp: firstname{{:}}Onno{{;}}lastname{{:}}Eberhard{{;}}birthdate{{:}}18.02.1998{{;}}email{{:}}OnnoEberhard@googlemail.com {{;}}joindate{{:}}12.06.2013{{;}}ips{{:}}::1
+ 
+ data2    -> Beinhaltet Daten des Users wie Posts/Status

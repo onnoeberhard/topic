@@ -1,0 +1,147 @@
+#homeMain > div {
+	min-width: 930px;
+}
+#homeContainer {
+	height:100%;
+	min-height:500px;
+	width:100%;
+	overflow:hidden;
+}
+#homeMain {
+	height:calc(100% - 100px);
+	width:calc(100% - 30px);
+	margin:15px;
+	padding:0;
+}
+#homeList {
+	position:relative;
+	width:calc(27.5% - 4px);
+	height:100%;
+	background-color:rgba(255, 255, 255, 0.3);
+	-moz-box-shadow:    2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  	-webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  	box-shadow:         2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+#homeAction {
+	position:relative;
+	height:100%;
+	width:calc(72.5% - 4px);
+	left:calc(27.5% + 4px);
+	top:-100%;
+}
+#homeActionCard {
+	width:100%;
+	height:100%;
+	-webkit-perspective: 1500px;
+	   -moz-perspective: 1500px;
+	     -o-perspective: 1500px;
+			perspective: 1500px;
+}
+#homeActionCard > div {
+	-moz-box-shadow:    2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  	-webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  	box-shadow:         2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+	background-color:rgba(255, 255, 255, 0.3);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+#homeActionCard * {
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+		 -o-backface-visibility: hidden;
+			backface-visibility: hidden;
+}
+#homeActionCard .front {
+	z-index: 900;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+	-o-transition: all .75s  ease-in-out;
+	-ms-transition: all 0s  ease-in-out;
+	-moz-transition: all .75s  ease-in-out;
+	-webkit-transition: all .75s  ease-in-out;
+	transition: all .75s  ease-in-out;
+}
+#homeActionCard.a .front {
+	-o-transition: all 0s  ease-in-out;
+	-ms-transition: all 0s  ease-in-out;
+	-moz-transition: all 0s  ease-in-out;
+	-webkit-transition: all 0s  ease-in-out;
+	transition: all 0s  ease-in-out;
+}
+#homeActionCard.flipped .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	 -o-transform:rotateY(180deg);
+    transform:rotateY(180deg);
+}
+#homeActionCard .back {
+	z-index: 800;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+    -o-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-moz-transform-style: preserve-3d;
+	-moz-backface-visibility: hidden;
+	-o-transition: all .75s  ease-in-out;
+	-ms-transition: all .75s  ease-in-out;
+	-moz-transition: all .75s  ease-in-out;
+	-webkit-transition: all .75s  ease-in-out;
+	transition: all .75s  ease-in-out;
+}
+#homeActionCard.a .back {
+	-o-transition: all 0s  ease-in-out;
+	-ms-transition: all 0s  ease-in-out;
+	-moz-transition: all 0s  ease-in-out;
+	-webkit-transition: all 0s  ease-in-out;
+	transition: all 0s  ease-in-out;
+}
+#homeActionCard.flipped .back {
+	z-index: 1000;
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+#homeActionCard .front > div, #homeActionCard .front > form > div {
+	overflow:auto;
+	opacity: 1;
+	transition:opacity 0.5s linear;
+}
+#homeActionCard.flipped .front > div, #homeActionCard.flipped .front > form > div {
+	opacity: 0;
+}
+#homeActionCard .back > div  {
+	overflow:auto;
+	opacity: 0;
+	transition:opacity 0.5s linear;
+}
+#homeActionCard.a .front > div, #homeActionCard.a .front > form > div {
+	transition:opacity 0s linear;
+}
+#homeActionCard.a .back > div {
+	transition:opacity 0s linear;
+}
+#homeActionCard.flipped .back > div {
+	opacity: 1;
+}
+.deleteMessageButton {
+	display:none;
+}
+.messageBox:hover .deleteMessageButton {
+	display:block;
+}
+.statusHoverDiv {
+	opacity:0;
+	transition:opacity .15s linear;
+}
+.statusBox:hover .statusHoverDiv {
+	opacity:1;
+}

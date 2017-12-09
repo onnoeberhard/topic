@@ -1,0 +1,79 @@
+@import url('../style/header.css');
+@import url('../style/welcome.css');
+@import url('../style/home.css');
+
+* {
+    margin:0;
+}
+html, body, .container {
+	height: 100%;
+	padding: 0;
+}
+.container {
+	margin-top:-20px;
+	height: auto;
+	min-height: 100%;
+}
+#adminContainer {
+	margin-top:0px;
+}
+.main {
+	padding-bottom: 20px;
+}
+.footer {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 20px;
+	margin-top: -20px;
+	background-color:rgba(0,0,0,0.5);
+	line-height:20px;
+	overflow:hidden;
+	min-width:960px;
+}
+body {
+	background-image: -ms-radial-gradient(center, circle farthest-corner, #FFA200 0%, #C27C00 100%);
+	background-image: -moz-radial-gradient(center, circle farthest-corner, #FFA200 0%, #C27C00 100%);
+	background-image: -o-radial-gradient(center, circle farthest-corner, #FFA200 0%, #C27C00 100%);
+	background-image: -webkit-gradient(radial, center center, 0, center center, 506, color-stop(0, #FFA200), color-stop(1, #C27C00));
+	background-image: -webkit-radial-gradient(center, circle farthest-corner, #FFA200 0%, #C27C00 100%);
+	background-image: radial-gradient(circle farthest-corner at center, #FFA200 0%, #C27C00 100%);
+}
+.contentAreaDefinetely {
+	width:960px;
+	margin:0 auto;
+}
+.contentAreaMaybe {
+	height:100%;
+	min-width:960px;
+	margin:0 auto;
+}
+.transculentButton {
+	cursor: pointer;
+	background-color:rgba(0,0,0,0);
+	border:none;
+	color:#222;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:25px;
+}
+.transculentButton:hover {
+	background-color:rgba(0,0,0,0.2);
+}
+.transculentButton:active {
+	background-color:rgba(0,0,0,0.4);
+}
+.bigText {
+	/*color:#066;*/
+	color:#FFF;
+	text-shadow:0px 1px 3px rgba(0, 0, 0, 0.2);
+	font-weight:normal;
+	font-family:"Trebuchet MS", Arial, sans-serif;
+	font-size:48px;
+}
+.smallText {
+	color:#333;
+	font-weight:normal;
+	text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+}

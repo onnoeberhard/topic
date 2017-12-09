@@ -1,0 +1,14 @@
+Pfilcht:
+ -Username
+ -Passwort
+ -E-Mail
+
+Optional:
+ -Vorname, Nachname
+ -Profilbild
+ -Statustext
+ -Geburtsdatum
+ -Handynummer
+
+data1: informations about user, meisten teile (z.B. firstname) nur einmal
+data2: daten die meist häufiger vorkommen (z.B. status, friends)

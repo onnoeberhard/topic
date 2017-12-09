@@ -1,0 +1,39 @@
+#welcomeMain p {
+	color:#ccc;
+	text-shadow:1px 1px 1px rgba(255, 162, 0, 0.1);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:25px;
+}
+#welcomeLogIn {
+	position:relative;
+	margin-top:220px;
+	text-align:right;
+	width:290px;
+	height:200px;
+}
+#welcomeLogIn > form > p {
+	position:relative;
+	right: 10px;
+}
+#welcomeRegister {
+	position:relative;
+	margin-top:-220px;
+	height:350px;
+	width:400px;
+	float:right;
+}
+#regVerMain > div > form > h1 {
+	color:#066;
+	text-align:center;
+	position:relative;
+	font-family:"Trebuchet MS", Arial, sans-serif;
+	font-size:48px;
+	font-weight:normal;
+}
+#regVerMain > div > form > p {
+	color:#333;
+	font-weight:normal;
+	text-shadow:1px 1px 1px rgba(255, 255, 255, 0.2);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+}

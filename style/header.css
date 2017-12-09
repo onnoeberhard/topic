@@ -1,0 +1,147 @@
+.header {
+	height:50px;
+	background-color:rgba(0,0,0,0.5);
+	min-width:960px;
+}
+.contentAreaDefinetely > .headerTitleDiv {
+	position:relative;
+	height:35px;
+	top:5px;
+	margin-left:15px;
+}
+.contentAreaMaybe > .headerTitleDiv {
+	position:relative;
+	height:35px;
+	top:5px;
+	margin-left: calc(50% - 480px + 15px);
+}
+.headerTitle {
+	position:relative;
+	color:#ffa200;
+	text-shadow:1px 1px 3px rgba(0,0,0,0.2);
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:32px;
+	text-decoration: none;
+}
+.headerSearch {
+	position:relative;
+	text-decoration: none;
+	width:550px;
+}
+.contentAreaMaybe > .headerSearch {
+	position:relative;
+	margin-left: calc(50% - 480px + 210px);
+	margin-top:-20px;
+}
+.headerSearch > input {
+	width: calc(100% - 29px);
+	padding-right:29px;
+	font-size:16px;
+	background-color:#ffa200;
+	border:none;
+	box-shadow:0px 0px 3px rgba(0,0,0,0.2);
+}
+.headerSearch > button {
+	position:relative;
+	margin-top:-21px;
+	float:right;
+	border:none;
+	padding-top:2px;
+	padding-bottom:2px;
+	background-color:rgba(0,0,0,0);
+}
+.headerMenu {
+	position:relative;
+	height:20px;
+	margin-top:-20px;
+	width:20px;
+	float:right;
+	margin-right:15px;
+}
+.headerMenu > ul{
+	height:100%;
+	padding:0;
+}
+.headerMenu > ul > li{
+	height:100%;
+	display:table;
+	margin-left: auto;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.headerMenu > ul > li > span{
+	display: table-cell;
+	vertical-align:middle;
+	color: white;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 0 #c28130;
+	text-shadow: 0 -1px 0 rgba(151, 99, 33, .43);
+	line-height: 18px;
+}
+.headerMenu > ul ul{
+	height:52px;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	right: -15px;
+	top: 100px;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+	-webkit-transition: all .35s .1s ease-in-out;
+	-moz-transition: all .35s .1s ease-in-out;
+	-ms-transition: all .35s .1s ease-in-out;
+	transition: all .35s .1s ease-in-out;
+}
+.headerMenu > ul li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+	color: #000;
+	z-index: 2;
+	top:34px;
+	right: -15px;
+}
+.headerMenu > ul ul:before{
+	content: '';
+	position: absolute;
+	top: -10px;
+	height: 20px;
+	background: transparent;
+}
+.headerMenu > ul ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+.headerMenu > ul ul li a{
+	text-align:right;
+	display: table;
+	color: white;
+	width:100%;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	height:100%;
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	-ms-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+	text-shadow: 0 -1px 0 #c28130;
+	text-shadow: 0 -1px 0 rgba(151, 99, 33, .43);
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.headerMenu > ul ul li a span{
+	display:table-cell;
+	vertical-align:middle;
+	padding-right:10px;
+	padding-left:15px;
+}
+.headerMenu > ul ul li a:hover{
+	background-color: rgba(0, 0, 0, 0.5);
+}
